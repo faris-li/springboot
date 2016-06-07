@@ -16,7 +16,7 @@ public class HelloWorldService {
         return str;
     }
 
-    @Cacheable(value = "userinfor", keyGenerator = "wiselyKeyGenerator")
+    @Cacheable(value = "userinfo", keyGenerator = "wiselyKeyGenerator")
     public UserInfo getUserInfo() {
         UserInfo info = new UserInfo();
         info.setUsername("test");
